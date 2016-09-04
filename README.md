@@ -1,2 +1,3 @@
 # w17731138318.github.io
-spring学习
+## effective
+_** SecondChapter.demo1 使用静态工厂方法替代构造器
