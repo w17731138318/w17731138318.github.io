@@ -8,13 +8,21 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 </head>
-<body>
+<body id="root">
+<script>
+    var vm = new Vue({
+        el: '#root',
+        data: {
+            projectName : "83年的猪博客.GitHub"
+        }
+    })
+</script>
 <section class="page-header">
-    <h1 class="project-name">83年的猪博客.GitHub</h1>
+    <h1 class="project-name">{{projectName}}</h1>
 
-    <h3 class="project-tagline">简介：毕业于河北科技大学
-        电气工程及其自动化专业。<br>2005年参加了2个月java培训，培训到一半时,一国企到学校招聘,直接被录取，家里人也开心，开始实习，毕业，转正。<br>直到2009年底,才下决心从新开始编程。2010年初通过大学同学(当时一块培训的哥们)开始了我的程序猿工作。</h3>
+    <h3 class="project-tagline">简介：毕业于河北科技大学电气工程及其自动化专业。</h3>
 </section>
 
 <section class="main-content">
