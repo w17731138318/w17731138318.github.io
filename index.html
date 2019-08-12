@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 </head>
-<body id="root">
+<body>
 <script>
     var vm = new Vue({
         el: '#root',
@@ -19,13 +19,14 @@
         }
     })
 </script>
-<section class="page-header">
-    <h1 class="project-name">{{projectName}}</h1>
+<div id="root">
+    <section class="page-header">
+        <h1 class="project-name">{{projectName}}</h1>
 
-    <h3 class="project-tagline">简介：毕业于河北科技大学电气工程及其自动化专业。</h3>
-</section>
+        <h3 class="project-tagline">简介：毕业于河北科技大学电气工程及其自动化专业。</h3>
+    </section>
 
-<section class="main-content">
+    <section class="main-content">
         <p>83年的猪博客</p>
         <a href="https://github.com/w17731138318/w17731138318.github.io">Effective学习</a><br>
         <a href="https://github.com/w17731138318/springcode">spring源码学习</a><br>
@@ -36,8 +37,7 @@
             <span class="site-footer-credits">QQ:28916455&nbsp;&nbsp;Email:w17731138318@126.com</span>
         </footer>
 
-</section>
-
-
+    </section>
+</div>
 </body>
 </html>
