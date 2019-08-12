@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <title>83年的猪博客.GitHub</title>
+    <title>王伟鑫的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
@@ -10,32 +10,159 @@
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
     <!-- 引入组件库 -->
     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <style>
+        /*公共样式--开始*/
+        html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+            margin: 0;
+            padding: 0;
+        }
+        *{box-sizing: border-box;}
+        html, body {
+            min-height: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Microsoft YaHei";
+            font-size:14px;
+            color:#333;
+        }
+        h1, h2, h3, h4, h5, h6{font-weight:normal;}
+        ul,ol {
+            list-style: none;
+        }
+
+        img {
+            border: none;
+            vertical-align: middle;
+        }
+
+        a {
+            text-decoration: none;
+            color: steelblue;
+        }
+
+        table {
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        input, textarea {
+            outline: none;
+            border: none;
+        }
+
+        textarea {
+            resize: none;
+            overflow: auto;
+        }
+
+        .clearfix {
+            zoom: 1;
+        }
+
+        .clearfix:after {
+            content: ".";
+            width: 0;
+            height: 0;
+            visibility: hidden;
+            display: block;
+            clear: both;
+            overflow:hidden;
+        }
+
+        .fl {
+            float: left
+        }
+
+        .fr {
+            float: right
+        }
+
+        .tl {
+            text-align: left;
+        }
+
+        .tc {
+            text-align: center
+        }
+
+        .tr {
+            text-align: right;
+        }
+
+        .ellipse {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .inline{
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+        }
+        .root{
+            height: 100%;
+        }
+        .my-header {
+            float: left;
+            width: 100%;
+            height: 10%;
+            padding: 10px 20px 10px 20px;
+            line-height: 50px;
+            color: steelblue;
+            border-bottom: 1px #dce6f0 solid;
+        }
+        .my-main-container {
+            height: 90%;
+        }
+        .my-aside {
+            height: 100%;
+            width: 15%;
+            float: left;
+            padding: 10px;
+            text-align: center;
+            color: steelblue;
+            border-right: 1px #dce6f0 solid;
+        }
+
+        .my-main {
+            height: 100%;
+            width: 85%;
+            float: left;
+            padding: 10px;
+            color: steelblue;
+        }
+    </style>
 </head>
 <body>
 
-<div id="root">
-    <el-container>
-        <el-header>
-            <h3>{{projectName}}</h3>
-            <h3>Header简介：毕业于河北科技大学电气工程及其自动化专业。</h3>
-        </el-header>
-        <el-main>
-            <p>83年的猪博客</p>
-            <a href="https://github.com/w17731138318/w17731138318.github.io">Effective学习</a><br>
+<div id="root" class="root">
+    <div class="my-header">
+        <h3>{{projectName}}</h3>
+    </div>
+    <div class="my-main-container">
+        <div class="my-aside" width="200px">
+            <p>王伟鑫</p>
+            <p>主要技能：java(10多年)、vue(全家桶熟练)、flutter(熟悉？熟练？)、spring cloud微服务、了解spring内部原理、各种消息中间件、nginx简单部署、docker简单部署、oracle和mysql、elastic、redis、mongodb、还有好多其他。</p>
+        </div>
+        <div class="my-main">
+            <a href="https://github.com/w17731138318/chinese-poetry">中华诗词</a><br>
+            <a href="https://github.com/w17731138318/architect">乱七八糟</a><br>
+            <a href="https://github.com/w17731138318/java-basic">JAVA基础</a><br>
             <a href="https://github.com/w17731138318/springcode">spring源码学习</a><br>
             <a href="https://github.com/w17731138318/myspring">一个简单的spring</a><br>
             <a href="https://github.com/w17731138318/java8-tutorial">Java 8 指南</a><br>
-        </el-main>
-        <el-footer>
-            <span>QQ:28916455&nbsp;&nbsp;Email:w17731138318@126.com</span>
-        </el-footer>
-    </el-container>
+        </div>
+    </div>
 </div>
 <script>
     var vm = new Vue({
         el: '#root',
         data: {
-            projectName: "83年的猪博客.GitHub"
+            projectName: "王伟鑫的猪博客.GitHub"
         }
     })
 </script>
